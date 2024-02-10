@@ -58,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
+    border: 1px solid black;
     width: 50%;
 }
 
@@ -85,4 +85,44 @@ body{
 
 .results .score h3{
     font-size: 72px;
+}
+
+.summary .categoryResult{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 15%;
+}
+
+#reaction{
+    background-color: hsl(0, 100%, 95%);
+}
+
+#memory{
+    background-color: hsl(39, 100%, 95%);
+}
+
+#verbal{
+    background-color: hsl(166, 100%, 95%);
+}
+
+#visual{
+    background-color: hsl(234, 85%, 95%);
+}
+
+#reaction h4{
+    color: var(--LightRed);
+}
+
+#memory h4{
+    color: var(--OrangeYellow);
+}
+
+#verbal h4{
+    color: var(--GreenTeal);
+}
+
+#visual h4{
+    color: var(--CobaltBlue);
 }
