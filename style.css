@@ -1,3 +1,5 @@
+@import url("https://fonts.google.com/specimen/Hanken+Grotesk");
+
 :root{
     /* Core Colors */
     --LightRed: hsl(0, 100%, 67%);
@@ -29,6 +31,19 @@ body{
     height: 100vh;
 }
 
+p, h3, h4, button{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+p, h2, h3, h4, button{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
 .attribution{ 
     font-size: 11px; text-align: center; 
 }
@@ -38,9 +53,9 @@ body{
 }
 
 .container{
-    width: 1000px;
+    width: 1000px; 
     max-width: 100%;
-    height: 500px;
+    height: 650px;
     display: flex;
     justify-content: center;
 }
@@ -49,7 +64,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: blue;
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
     color: white;
     width: 50%;
 }
@@ -76,7 +91,7 @@ body{
     border-radius: 100%;
     aspect-ratio: 1 / 1;
     width: 50%;
-    background-color: red;
+    background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +107,9 @@ body{
     flex-direction: row;
     align-items: center;
     width: 80%;
-    height: 15%;
+    height: 10%;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #reaction{
@@ -111,18 +128,37 @@ body{
     background-color: hsl(234, 85%, 95%);
 }
 
-#reaction h4{
+#reaction h4, #reaction i{
     color: var(--LightRed);
 }
 
-#memory h4{
+#memory h4, #memory i{
     color: var(--OrangeYellow);
 }
 
-#verbal h4{
+#verbal h4, #verbal i{
     color: var(--GreenTeal);
 }
 
-#visual h4{
+#visual h4, #visual i{
     color: var(--CobaltBlue);
+}
+
+.hundred{
+    color: gray;
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    width: 80%;
+    height: 10%;
+    border-radius: 30px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--LightSlateBlue);
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
 }
