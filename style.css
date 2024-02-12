@@ -83,8 +83,13 @@ p, h2, h3, h4, button, span{
     left: 0;
 }
 
-.results p{
-    padding: 25px 0px 25px 0px;
+#resultTitle{
+    padding: 50px;
+    color: lightgray;
+}
+
+.results h2{
+    padding: 20px;
 }
 
 .results .score{
@@ -96,12 +101,27 @@ p, h2, h3, h4, button, span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    white-space: pre;
+}
+
+.results .scoreDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results .scoreDescription p{
+    color: lightgray;
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
 }
 
 #points{
-    font-size: 72px;
+    font-size: 96px;
     font-weight: 550;
+    padding: 0;
+    margin: 0;
 }
 
 .summary .categoryResult{
@@ -111,6 +131,14 @@ p, h2, h3, h4, button, span{
     width: 80%;
     height: 10%;
     border-radius: 10px;
+    margin: 10px;
+}
+
+.summary h2{
+    width: 80%;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 #reaction{
@@ -166,6 +194,7 @@ button{
     height: 10%;
     border-radius: 30px;
     color: white;
+    margin-top: 50px;
 }
 
 button:hover{
